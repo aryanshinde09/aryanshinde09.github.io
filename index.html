@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aryan shinde – Portfolio</title>
+<meta name="description" content="Portfolio of Your Name">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* ---------- Customize here: colors and font ---------- */
+  :root {
+    --bg: #f6f8fb;
+    --text: #1c2733;
+    --muted: #5a6877;
+    --line: #d5dce5;
+    --accent: #0b6e8a;
+    --font: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121a22;
+      --text: #e4eaf0;
+      --muted: #97a5b3;
+      --line: #2b3844;
+      --accent: #5cc0dc;
+    }
+  }
+  /* ------------------------------------------------------ */
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 400 1.0625rem/1.65 var(--font);
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 0 1.25rem; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  header { padding: 4rem 0 2.5rem; }
+  h1 { font-size: clamp(2.25rem, 7vw, 3.5rem); line-height: 1.08; margin: 0 0 .75rem; font-weight: 600; letter-spacing: -.02em; }
+  .tagline { font-size: 1.25rem; color: var(--muted); margin: 0 0 1.5rem; max-width: 34rem; }
+  nav { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
+  nav a { color: var(--text); font-weight: 500; }
+
+  section { padding: 2.5rem 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 1.5rem; margin: 0 0 1rem; font-weight: 600; letter-spacing: -.01em; }
+  p { margin: 0 0 1rem; max-width: 38rem; }
+
+  .project { padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
+  .project:first-of-type { padding-top: 0; }
+  .project:last-child { border-bottom: 0; padding-bottom: 0; }
+  .project h3 { font-size: 1.15rem; margin: 0 0 .25rem; font-weight: 600; }
+  .project p { margin-bottom: .5rem; }
+  .tools { color: var(--muted); font-size: .95rem; }
+  .links { display: flex; gap: 1.25rem; font-size: .95rem; margin-top: .25rem; }
+
+  dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: .5rem 1.5rem; }
+  dt { font-weight: 600; }
+  dd { margin: 0; color: var(--muted); }
+  @media (max-width: 30rem) { dl { grid-template-columns: 1fr; gap: 0; } dd { margin-bottom: .75rem; } }
+
+  footer { padding: 2rem 0 3rem; color: var(--muted); font-size: .95rem; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Aryan</h1>
+    <p class="tagline">Cyber Security</p>
+    <nav aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#Certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+      
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>I am very </p>
+      <p><a href="resume.pdf" target="_blank">Download my resume (PDF)</a></p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3>Project name</h3>
+        <p>What problem it solves and what you built. Include one result if you have one.</p>
+        <p class="tools">Tools: Tool A, Tool B, Tool C</p>
+        <div class="links">
+          <a href="https://github.com/your-username/project-one">Source code</a>
+          <a href="https://example.com">Live demo</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <h3>Project name</h3>
+        <p>What problem it solves and what you built. Include one result if you have one.</p>
+        <p class="tools">Tools: Tool A, Tool B, Tool C</p>
+        <div class="links">
+          <a href="https://github.com/your-username/project-two">Source code</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <h3>Project name</h3>
+        <p>What problem it solves and what you built. Include one result if you have one.</p>
+        <p class="tools">Tools: Tool A, Tool B, Tool C</p>
+        <div class="links">
+          <a href="https://github.com/your-username/project-three">Write-up</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <dl>
+        <dt>Languages</dt><dd>Python, JavaScript, SQL</dd>
+        <dt>Tools</dt><dd>Git, Docker, Linux</dd>
+        <dt>Learning</dt><dd>Add what you are studying now</dd>
+      </dl>
+    </section>
+
+
+    <section id="Certificates">
+    <h2>Certificates</h2>
+    <p>Here are some of the certificates i have </p>
+
+
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>The best way to reach me is email.</p>
+      <p>
+        <a href="mailto:you@example.com">you@example.com</a><br>
+        <a href="https://www.linkedin.com/in/your-username">LinkedIn</a><br>
+        <a href="https://github.com/your-username">GitHub</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 aryan</footer>
+
+</div>
+</body>
+</html>
